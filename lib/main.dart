@@ -2,6 +2,8 @@ import 'package:dog_api_fetching/view/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'binding/controller_binding.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -27,6 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      initialBinding: ControllerBinding(),
       home: const HomeView(),
     );
   }
